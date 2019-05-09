@@ -42,7 +42,7 @@ title-img: /img/Super Mushroom.png
 
 # Personalize the colors in your website. Colour values can be any valid CSS colour
 
-navbar-col: "#0B615E"
+navbar-col: "#58ACFA"
 navbar-text-col: "#FFFFFF"
 navbar-children-col: "#F5F5F5"
 page-col: "#FFFFFF"
