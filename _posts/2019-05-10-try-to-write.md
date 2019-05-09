@@ -4,7 +4,8 @@ published: false
 title: try to write
 subtitle: 使用prose书写
 date: '2019-05-10'
-tag: '-personal'
+tag:
+  - personal
 ---
 ## A New Post
 
