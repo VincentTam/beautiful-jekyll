@@ -24,7 +24,9 @@ description: Lucky to meet you
 # List of links in the navigation bar
 navbar-links:
   Home: ""
-  About Me: "aboutme"
+  About: "aboutme"
+  Tags: "https://Roothash41.github.io/tags/"
+  Search: "search"
 #  Resources:
 #    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
 #    - Learn markdown: "http://www.markdowntutorial.com/"
