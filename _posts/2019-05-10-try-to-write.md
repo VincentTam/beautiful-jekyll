@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: try to write
+title: 新文章
 subtitle: 使用prose书写
 date: '2019-05-10'
 tag:
