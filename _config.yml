@@ -25,7 +25,7 @@ description: Lucky to meet you
 navbar-links:
   Home: ""
   About: "aboutme"
-  Tags: "https://Roothash41.github.io/tags/"
+  Tags: "https://zzzxy.xyz/tags/"
   Search: "search"
 #  Resources:
 #    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
@@ -40,7 +40,6 @@ navbar-links:
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
 title-img: /img/Super Mushroom.png
-title : rbf
 
 # --- Background colour/image options --- #
 
@@ -49,7 +48,7 @@ title : rbf
 navbar-col: "#F5F5F5"
 navbar-text-col: "#404040"
 navbar-children-col: "#F5F5F5"
-page-col: "#FFFFFF"
+page-col: "#CCCCCC"
 link-col: "#008AFF"
 hover-col: "#0085A1"
 footer-col: "#F5F5F5"
@@ -75,7 +74,7 @@ author:
 # You can reorder the items to define the link order.
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
-#  rss: true
+  rss: true
   email: "donald.hill.duck@gmail.com"
 #  facebook: daattali
 #  github: daattali
@@ -103,7 +102,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-# url-pretty: "zzzxy.com"  # eg. "deanattali.com/beautiful-jekyll"
+# url-pretty: "zzzxy.xyz"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Web Statistics Section --- #
 
