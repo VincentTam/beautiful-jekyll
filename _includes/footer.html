@@ -45,52 +45,32 @@
       Theme by
       <a href="https://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
     </p -->
+        <!-- 显示网站运行时间 -->
         <p class="theme-by text-muted">
-        <span id="htmer_time" style='white-space:pre;'></span>
+        <span id="site_runtime"></span>
         </p> 
       </div>
     </div>
   </div>
 </footer>
-<!-- 计算网站运行时间 -->
-<script language=JavaScript> 
- function secondToDate(second) {
-     if (!second) {
-        return 0;
-     }
-
- var time = new Array(0, 0, 0, 0);
-
- if (second >= 24 * 3600) {
-     time[0] = parseInt(second / (24 * 3600));
-     second %= 24 * 3600;
- }
-
- if (second >= 3600) {
-     time[1] = parseInt(second / 3600);
-     second %= 3600;
- }
-
- if (second >= 60) {
-     time[2] = parseInt(second / 60);
-     second %= 60;
- }
-
- if (second > 0) {
-     time[3] = second;
- }
-    return time;
-}
-</script>
-
+  
 <!-- 动态显示网站运行时间 -->
-<script type="text/javascript" language="javascript">
-    function setTime() {
-        var create_time = Math.round(new Date(Date.UTC(2018, 03, 16, 0, 0, 0)).getTime() / 1000);
-        var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
-        currentTime = secondToDate((timestamp - create_time));
-        currentTimeHtml = 'Keep running&nbsp;&nbsp;' + currentTime[0] + '&nbsp;:&nbsp;' + currentTime[1] + '&nbsp;:&nbsp;' + currentTime[2] + '&nbsp;:&nbsp;' + currentTime[3] + '&nbsp;&nbsp;&nbsp;';
-        document.getElementById("htmer_time").innerHTML = currentTimeHtml;
+<script type="text/javascript">
+    function show_site_runtime(){
+	window.setTimeout("show_site_runtime()",1000); // 每秒运行一次函数
+	X=new Date("16/03/2018 00:00:00"); //在这里修改你的建站时间
+	Y=new Date();
+	T=(Y.getTime()-X.getTime()); // 获取当前时间与指定时间之间的时间间隔（ms）	
+	i=24*60*60*1000;
+	d=T/i;
+	D=Math.floor(d); // 计算天数并向下取整
+	h=(d-D)*24;
+	H=Math.floor(h); // 计算剩余不足一天的小时数并向下取整
+	m=(h-H)*60;
+	M=Math.floor(m); // 计算剩余不足一小时的分钟数并向下取整
+	s=(m-M)*60
+	S=Math.floor(s); // 计算剩余不足一分钟的秒数并向下取整
+	site_runtime.innerHTML= Y+D + " 天 " + H + " 小时 " + M + " 分 " + S + " 秒 "
     }
-    setInterval(setTime, 1000);
+	show_site_runtime();
 </script>
