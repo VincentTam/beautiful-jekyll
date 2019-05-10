@@ -7,6 +7,7 @@ date: '2019-05-10'
 author: xd
 tag:
   - personal
+image: /img/mario-png/Cherry Bonus.png
 ---
 ## A New Post
 
