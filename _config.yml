@@ -25,7 +25,7 @@ description: Lucky to meet you
 navbar-links:
   Home: ""
   About: "aboutme"
-  Tags: "tags"
+  Tags: "/_includes/tags"
 #  Category: "category"
   Search: "search"
 #  Resources:
