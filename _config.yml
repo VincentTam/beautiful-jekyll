@@ -25,7 +25,8 @@ description: Lucky to meet you
 navbar-links:
   Home: ""
   About: "aboutme"
-  Tags: "https://zzzxy.xyz/tags/"
+  Tags: "tags"
+  Category: "category"
   Search: "search"
 #  Resources:
 #    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
