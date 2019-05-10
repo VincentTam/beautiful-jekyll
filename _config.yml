@@ -67,17 +67,10 @@ footer-link-col: "#404040"
 
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
-#author:
-#  name: Rayxon
-authors:
-  hanzou:
-    name: Hanzou Hattori
-    display_name: Hanzou
-    gravatar: c66919cb194f96c696c1da0c47354a6a
-    email: hanzou@company.com
-    web: http://company.com
-    twitter: company
-    github: hhattori
+author:
+  name: Rayxon
+
+
 # Select your active Social Network Links.
 # Uncomment the links you want to show in the footer and add your information to each link.
 # You can reorder the items to define the link order.
