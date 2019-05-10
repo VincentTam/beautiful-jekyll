@@ -9,6 +9,12 @@ tag:
   - personal
 image: /img/mario-png/Cherry Bonus.png
 ---
-## A New Post
+* 目录
+{:toc}
 
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+## 这是一篇演示文章
+ - 内容
+### 子标题
+ - 内容
+#### 子标题
+ - 内容
