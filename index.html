@@ -19,7 +19,20 @@ use-site-title: true
     </a>
 
     <p class="post-meta">
-      Posted on {{ post.date | date: "%Y-%m-%d" }}
+	<!-- Look the author details up from the site config. -->
+	{% assign author = site.data.authors[page.author] %}
+
+	<!-- Output author details if some exist. -->
+	{% if author %}
+		<!-- Personal Info. -->
+		Posted on {{ page.date | date: "%Y-%m-%d" }} by {{ author.name }}
+		<!-- 
+		Posted on {{ page.date | date: "%Y-%m-%d" }} by <a href="{{ author.web }}" target="_blank">{{ author.name }}</a>
+		-->
+	{% else %}
+		<!-- Personal Info. -->
+		Posted on {{ page.date | date: "%Y-%m-%d" }}
+	{% endif %}
     </p>
 
     <div class="post-entry-container">
