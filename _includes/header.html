@@ -43,7 +43,10 @@
 			{% if author %}
 				<span class="post-meta">
 				<!-- Personal Info. -->
+				Posted on {{ page.date | date: "%Y-%m-%d" }} by {{ author.name }}
+				<!-- 
 				Posted on {{ page.date | date: "%Y-%m-%d" }} by <a href="{{ author.web }}" target="_blank">{{ author.name }}</a>
+				-->
 				</span>
 			{% else %}
 				<span class="post-meta">
@@ -84,7 +87,10 @@
 			{% if author %}
 				<span class="post-meta">
 				<!-- Personal Info. -->
+				Posted on {{ page.date | date: "%Y-%m-%d" }} by {{ author.name }}
+				<!-- 
 				Posted on {{ page.date | date: "%Y-%m-%d" }} by <a href="{{ author.web }}" target="_blank">{{ author.name }}</a>
+				-->
 				</span>
 			{% else %}
 				<span class="post-meta">
