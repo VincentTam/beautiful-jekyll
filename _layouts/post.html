@@ -2,7 +2,7 @@
 layout: base
 ---
 
-
+{{ content | strip_html | strip_newlines | split: "" | size }} words
 {% include header.html type="post" %}
 <div class="container">
   <div class="row">
