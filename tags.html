@@ -25,7 +25,21 @@ title: 'Tag Index'
             <div class="tag-entry">
                 <a href="{{- site.url -}}{{- post.url -}}">{{- post.title -}}</a>
                 <div class="entry-date">
-                    <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: "%Y-%m-%d" }} by test</time>
+                    <!-- Look the author details up from the site config. -->
+                    {% assign author = site.data.authors[post.author] %}
+
+                    <!-- Output author details if some exist. -->
+                    {% if author %}
+                        <!-- Personal Info. -->
+                        <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: "%Y-%m-%d" }} by {{ author.name }}</time>
+                        <!-- 
+                        Posted on {{ page.date | date: "%Y-%m-%d" }} by <a href="{{ author.web }}" target="_blank">{{ author.name }}</a>
+                        -->
+                    {% else %}
+                        <!-- Personal Info. -->
+                        <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: "%Y-%m-%d" }} by test</time>
+                    {% endif %}
+                    <!-- time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: "%Y-%m-%d" }} by test</time -->
                 </div>
             </div>
         {%- endfor -%}
