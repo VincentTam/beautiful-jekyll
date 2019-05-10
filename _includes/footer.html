@@ -45,7 +45,9 @@
       Theme by
       <a href="https://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
     </p -->
-    <p class="theme-by text-muted">>>>  <span id="htmer_time"></span>  <<<</p> 
+        <p class="theme-by text-muted">
+        <span id="htmer_time"></span>
+        </p> 
       </div>
     </div>
   </div>
@@ -80,18 +82,14 @@
     return time;
 }
 </script>
-<script language=JavaScript> 
-function fn3(num, 2) {  
-    return (Array(2).join('0') + num).slice(-2);  
-}
-</script>
+
 <!-- 动态显示网站运行时间 -->
 <script type="text/javascript" language="javascript">
     function setTime() {
-        var create_time = Math.round(new Date(Date.UTC(2018, 04, 16, 0, 0, 0)).getTime() / 1000);
+        var create_time = Math.round(new Date(Date.UTC(2018, 03, 16, 0, 0, 0)).getTime() / 1000);
         var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
         currentTime = secondToDate((timestamp - create_time));
-        currentTimeHtml = 'Keep running : ' + currentTime[0] + ' : ' + fn3(currentTime[1]) + ' : ' + fn3(currentTime[2]) + ' : ' + fn3(currentTime[3]);
+        currentTimeHtml = 'Keep running :  ' + currentTime[0] + ' : ' + currentTime[1] + '  :  ' + currentTime[2] + '  :  ' + currentTime[3];
         document.getElementById("htmer_time").innerHTML = currentTimeHtml;
     }
     setInterval(setTime, 1000);
