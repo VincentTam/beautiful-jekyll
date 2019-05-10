@@ -4,6 +4,7 @@ published: true
 title: 新文章
 subtitle: 使用prose书写
 date: '2019-05-10'
+author: xd
 tag:
   - personal
 ---
