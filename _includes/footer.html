@@ -39,15 +39,13 @@
           <a href="http://{{- site.matomo.uri -}}/index.php?module=CoreAdminHome&action=optOut" target="_blank" class="text_muted">Do-not-Track</a>
         {% endif %}
       {% endif%}
-      </p>>>>
+      </p>
           <!-- Please don't remove this, keep my open source work credited :) -->
-    <p class="theme-by text-muted">
-      <!--
+    <!-- p class="theme-by text-muted">
       Theme by
       <a href="https://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
-      -->
-      <span id="htmer_time" style="color: #24a0f0;"></span>      
-    <<<</p>
+    </p -->
+    <p class="theme-by text-muted">>>>  <span id="htmer_time"></span>  <<<</p> 
       </div>
     </div>
   </div>
@@ -89,7 +87,7 @@
         var create_time = Math.round(new Date(Date.UTC(2018, 04, 16, 0, 0, 0)).getTime() / 1000);
         var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
         currentTime = secondToDate((timestamp - create_time));
-        currentTimeHtml = 'Running' + currentTime[0] + 'D' + currentTime[1] + 'H' + currentTime[2] + 'M' + currentTime[3] + 'S';
+        currentTimeHtml = 'Keep running : ' + currentTime[0] + ' D ' + currentTime[1] + ' H ' + currentTime[2] + ' M ' + currentTime[3] + ' S ';
         document.getElementById("htmer_time").innerHTML = currentTimeHtml;
     }
     setInterval(setTime, 1000);
