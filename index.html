@@ -25,13 +25,13 @@ use-site-title: true
 	<!-- Output author details if some exist. -->
 	{% if author %}
 		<!-- Personal Info. -->
-		Posted on {{ page.date | date: "%Y-%m-%d" }} by {{ author.name }}
+		Posted on {{ post.date | date: "%Y-%m-%d" }} by {{ author.name }}
 		<!-- 
 		Posted on {{ page.date | date: "%Y-%m-%d" }} by <a href="{{ author.web }}" target="_blank">{{ author.name }}</a>
 		-->
 	{% else %}
 		<!-- Personal Info. -->
-		Posted on {{ page.date | date: "%Y-%m-%d" }}
+		Posted on {{ post.date | date: "%Y-%m-%d" }}
 	{% endif %}
     </p>
 
