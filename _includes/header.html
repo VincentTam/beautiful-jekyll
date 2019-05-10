@@ -36,8 +36,24 @@
 		  {% endif %}
 		  
 		  {% if include.type == "post" %}
-		  <span class="post-meta">Posted on {{ page.date | date: "%Y-%m-%d" }}</span>
+			<!-- Look the author details up from the site config. -->
+			{% assign author = site.data.authors[page.author] %}
+
+			<!-- Output author details if some exist. -->
+			{% if author %}
+				<span class="post-meta">
+				<!-- Personal Info. -->
+				Posted on {{ page.date | date: "%Y-%m-%d" }} by <a href="{{ author.web }}" target="_blank">{{ author.name }}</a>
+				</span>
+			{% else %}
+				<span class="post-meta">
+				<!-- Personal Info. -->
+				Posted on {{ page.date | date: "%Y-%m-%d" }}
+				</span>
+			{% endif %}
+
 		  {% endif %}
+		
         </div>
       </div>
     </div>
@@ -61,7 +77,21 @@
 		  {% endif %}
 		  
 		  {% if include.type == "post" %}
-		  <span class="post-meta">Posted on {{ page.date | date: "%Y-%m-%d" }}</span>
+			<!-- Look the author details up from the site config. -->
+			{% assign author = site.data.authors[page.author] %}
+
+			<!-- Output author details if some exist. -->
+			{% if author %}
+				<span class="post-meta">
+				<!-- Personal Info. -->
+				Posted on {{ page.date | date: "%Y-%m-%d" }} by <a href="{{ author.web }}" target="_blank">{{ author.name }}</a>
+				</span>
+			{% else %}
+				<span class="post-meta">
+				<!-- Personal Info. -->
+				Posted on {{ page.date | date: "%Y-%m-%d" }}
+				</span>
+			{% endif %}
 		  {% endif %}
         </div>
       </div>
