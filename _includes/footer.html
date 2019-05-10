@@ -29,7 +29,7 @@
       {{ site.time | date: '%Y' }}
       &nbsp;&bull;&nbsp;
         <span id="busuanzi_container_site_uv">
-          <span id="busuanzi_value_site_uv"></span>visitors
+          <span id="busuanzi_value_site_uv"></span>&nbsp;visitors
         </span>
         
       {% if site.url-pretty %}
@@ -96,4 +96,8 @@
         document.getElementById("sitetime").innerHTML=" 已运行 ："+diffAllDays+" 天 "+diffHours+" 时 "+diffMinutes+" 分 "+diffSeconds+" 秒";
     }
     siteTime();
+</script>
+
+  <!-- 浏览计数 http://ibruce.info/2015/04/04/busuanzi/#more -->
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
