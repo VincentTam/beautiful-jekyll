@@ -27,6 +27,7 @@ navbar-links:
   About: "aboutme"
   Tags: "tags"
 #  Category: "category"
+  Archives: "archives"
   Search: "search"
 #  Resources:
 #    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
