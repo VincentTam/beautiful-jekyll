@@ -34,9 +34,6 @@ use-site-title: true
 		Posted on {{ post.date | date: "%Y-%m-%d" }} · {{ post.content | strip_html | strip_newlines | split: "" | size }} words
 	{% endif %}
     </p>
-	<span id="busuanzi_container_page_pv" class="post-meta">
-		 · <span id="busuanzi_value_page_pv"></span>view
-	</span>
 
     <div class="post-entry-container">
       {% if post.image %}
