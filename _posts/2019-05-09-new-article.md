@@ -6,7 +6,7 @@ image: /img/Mario.png
 tags: [wish, love]
 ---
 
-**I build this page to you.**
+**I build this page for you.**
 
 ### Smile to me 
 
