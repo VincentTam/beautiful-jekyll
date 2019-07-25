@@ -1,0 +1,13 @@
+---
+layout: post
+title: Hiya world
+subtitle: the subtitle
+bigimg: /img/path.jpg
+image: /img/hello_world.jpeg
+gh-repo: remyclem/Iris_classification
+gh-badge: [star, fork, follow]
+tags: [tag_test]
+comments: true
+---
+
+# Test
